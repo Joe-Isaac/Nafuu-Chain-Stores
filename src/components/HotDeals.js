@@ -14,7 +14,7 @@ const HotDeals = () => {
       <div className='m-3 w-screen flex justify-center'>
         <div >
         <div className='flex justify-center w-full'>
-          <p className='my-2 font-semibold text-2xl'>Movies Section</p>
+          <p className='my-2 font-semibold text-2xl'>Fashion and wear</p>
         </div>
         <Carousel autoplay className='w-[50vh]'>
         
@@ -31,7 +31,7 @@ const HotDeals = () => {
             
         </div>
 
-        <div className='w-[40vh]'>
+        <div className=''>
         <div className='relative top-10 right-0 justify-end left-1 z-10 text-white text-semibold text-md bg-opacity-70 bg-red-600 w-fit pl-1 pr-1'>
               -15% off
         </div>
@@ -45,9 +45,9 @@ const HotDeals = () => {
         </div>
 
 
-        <div className=''>
+        <div className='w-[40vh]'>
         <div className='relative top-10 right-0 justify-end left-1 z-10 text-white text-semibold text-md bg-opacity-70 bg-red-600 w-fit pl-1 pr-1'>
-              -30% off, Thursdays
+              -10% off
         </div>
 
             <div className='w-full'>
@@ -82,7 +82,7 @@ const HotDeals = () => {
 
             <div className='w-full'>
 
-              <img className='object-cover max-h-52 w-full' src='https://cdn.shopify.com/s/files/1/2026/3639/products/product-image-1674105153_7cc34d82-f882-4606-aebb-2a8704846f98_480x480.jpg?v=1635608846' alt=''/>
+              <img className='object-cover max-h-52 w-full' src='https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=600' alt=''/>
 
             </div>
             
@@ -95,7 +95,7 @@ const HotDeals = () => {
 
             <div className='w-full'>
 
-              <img className='object-cover max-h-52 w-full' src='https://www.sirri.com/media/catalog/product/cache/c0e7c0875c889aef60063c3b9191953f/b/o/boys_check_slim_fit_3_piece_suit_in_light_blue_4_.jpg' alt=''/>
+              <img className='object-cover max-h-52 w-full' src='https://images.pexels.com/photos/3076787/pexels-photo-3076787.jpeg?auto=compress&cs=tinysrgb&w=600' alt=''/>
 
             </div>
             
@@ -109,7 +109,7 @@ const HotDeals = () => {
 
             <div className='w-full'>
 
-              <img className='object-cover max-h-52 w-full' src='https://wwd.com/wp-content/uploads/2022/05/Nike-Shoes-1.jpg?w=1000&h=563&crop=1&resize=910%2C511' alt=''/>
+              <img className='object-cover max-h-52 w-full' src='https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg?auto=compress&cs=tinysrgb&w=600' alt=''/>
 
             </div>
             
@@ -122,6 +122,60 @@ const HotDeals = () => {
         </div>
       </div>
 
+      {/* Third Category */}
+      <div className='m-3 w-screen flex justify-center'>
+        <div >
+        <div className='flex justify-center w-full'>
+          <p className='my-2 font-semibold text-2xl'>Food stuff</p>
+        </div>
+        <Carousel autoplay className='w-[50vh]'>
+        
+        <div className='w-[40vh]'>
+        <div className='relative top-10 right-0 justify-end left-1 z-10 text-white text-semibold text-md bg-opacity-70 bg-red-600 w-fit pl-1 pr-1'>
+              -20% off
+        </div>
+
+            <div className='w-full'>
+
+              <img className='object-cover max-h-52 w-full' src='https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=600' alt=''/>
+
+            </div>
+            
+        </div>
+
+        <div className=''>
+        <div className='relative top-10 right-0 justify-end left-1 z-10 text-white text-semibold text-md bg-opacity-70 bg-red-600 w-fit pl-1 pr-1'>
+              -15% off
+        </div>
+
+            <div className='w-full'>
+
+              <img className='object-cover max-h-52 w-full' src='https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=600' alt=''/>
+
+            </div>
+            
+        </div>
+
+
+        <div className='w-[40vh]'>
+        <div className='relative top-10 right-0 justify-end left-1 z-10 text-white text-semibold text-md bg-opacity-70 bg-red-600 w-fit pl-1 pr-1'>
+              -10% off
+        </div>
+
+            <div className='w-full'>
+
+              <img className='object-cover max-h-52 w-full' src='https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=600' alt=''/>
+
+            </div>
+            
+        </div>
+
+
+        
+        
+        </Carousel>
+        </div>
+      </div>
 
     </div>
       

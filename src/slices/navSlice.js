@@ -2,7 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     name : null,
-    age : null,
+    description : null,
+    price : null,
 }
 
 export const navSlice = createSlice(
@@ -13,17 +14,21 @@ export const navSlice = createSlice(
             setName : (state, action) => {
                 state.name = action.payload;
             },
-            setAge: (state, action) => {
-                state.age = action.payload;
+            setDescription: (state, action) => {
+                state.description = action.payload;
+            },
+            setPrice: (state, action) => {
+                state.price = action.payload;
             }
         }
     }
 );
 
-export const {setName, setAge} = navSlice.actions;
+export const {setName, setDescription, setPrice} = navSlice.actions;
 
 //selectors
 export const selectName = (state) => state.nav.name;
-export const selectAge = (state) => state.nav.age;
+export const selectDescription = (state) => state.nav.description;
+export const selectPrice = (state) => state.nav.price;
 
 export default navSlice.reducer;

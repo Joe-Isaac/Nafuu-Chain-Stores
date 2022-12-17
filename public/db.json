@@ -1,0 +1,110 @@
+{
+    "shops":[
+        {
+            "name": "Uzima Veggies"
+        },
+        {
+            "name": "Mufasa's Cloth Line",
+            "description" : "Exclusive mens, womens, and childrens wear",
+            "shop" : "Shop 17C",
+            "categories" : {
+                "mens":{
+                    "shoes":{
+                        "Nikes": [
+                            {
+                                "name": "Air Force",
+                                "price": 3000,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ]
+                            },
+                            {
+                                "name": "Huarache",
+                                "price": 2700,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ]
+                            },
+                            {
+                                "name": "Jordans",
+                                "price": 3300,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ]
+                            },
+                            {
+                                "name": "Presto",
+                                "price": 3500,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ]
+                            },
+                            {
+                                "name": "LeBron XX",
+                                "price": 3500,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ]
+                            }
+                        ],
+                        "Sply": [
+                            {
+                                "name": "Adidas",
+                                "price": 3000,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ]
+                            },
+                            {
+                                "name": "Yeezy",
+                                "price": 2700,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ]
+                            },
+                            {
+                                "name": "Zebra",
+                                "price": 3300,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ]
+                            },
+                            {
+                                "name": "Classic",
+                                "price": 3500,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ]
+                            }
+                        ]
+                    },
+                    "trousers":{},
+                    "shirts":{},
+                    "suits":{},
+                    "bags":{}
+                },
+                "womens": {
+                    "shoes":{},
+                    "trousers":{},
+                    "shirts":{},
+                    "suits":{},
+                    "bags":{}
+                },
+                "children": {
+                    "shoes":{},
+                    "trousers":{},
+                    "shirts":{},
+                    "suits":{},
+                    "bags":{}
+                },
+                "unisexual":{
+                    "shoes":{},
+                    "trousers":{},
+                    "shirts":{},
+                    "suits":{},
+                    "bags":{}
+                }
+            }
+        }
+    ]
+}

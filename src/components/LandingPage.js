@@ -6,12 +6,14 @@ import HotDeals from './HotDeals'
 
 const LandingPage = () => {
   return (
-    <div className='h-auto w-auto'>
+    <div className='h-screen w-screen'>
 
         {/* Navigation Bar */}
 
+        <div className='fixed w-full z-10'>
         <NavigationBar/>
-
+        </div>
+ 
 
         {/* Body section that contains a list of the shops */}
 
