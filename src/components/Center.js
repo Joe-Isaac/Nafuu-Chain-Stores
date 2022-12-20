@@ -1,116 +1,85 @@
+import { Col, Row } from 'antd';
 import React from 'react';
 import {RiAddFill} from 'react-icons/ri';
 import { useDispatch, useSelector } from 'react-redux';
 import { setName, setPrice, setDescription } from '../slices/navSlice';
-const Center = () => {
+const Center = ({data}) => {
+    
     const dispatch = useDispatch();
-    const addToCart = () => {
-        console.log("An action has been dispatched");
-        dispatch(setName("Item Name"));
-        dispatch(setPrice("Item Price"));
-        dispatch(setDescription("Item Description"));
+    const addToCart = (data) => {
+        
+        dispatch(setName(data.name));
+        dispatch(setPrice(data.price));
     }
+
+    let times = 0;
 
   return (
     <div className='overflow-y-hidden px-3 py-3 flex flex-col w-full'>
-        <div className='w-full flex justify-center'>
-            <header className='font-semibold text-xl my-3'>
-                Category of selection here
+        
+        <>
+        {
+        data.categories.map(x => {
+            return (<>
+            <div className='w-full flex justify-center'>
+            <header className='font-semibold text-4xl my-2'>
+                {x.name}
             </header>
         </div>
+            {x?.data.map(newData => {
+                return(
+                    <>
+                    <div className='font-semibold text-2xl w-full flex justify-center my-3'>{newData?.name}</div>
+                    <div className='w-full my-3'>
+                        {newData?.data.map(z => (<>
+                            <div className='font-semibold text-xl my-3'>{z?.name}</div>
+                            <Row className='w-full my-3'>
+                            {   
+                                z.data.map(data => (
+                                    <Col className='w-[40vh] flex flex-col justify-center items-center border shadow-md rounded-lg mx-3 my-3 p-3'>
+                                    <div className='flex w-full'>
+                                        <img className='object-cover h-20 w-20 rounded-lg' alt='' src={data.url}/>
+                                        <p className='px-2'>{data.name}</p>
+                                    </div>
+                                    <div className='flex w-full justify-between items-end'>
+                                        <div><p>{data.price}</p></div>
+                                        <div className="flex justify-between items-center cursor-pointer"
+                                        onClick={()=>addToCart(data)}><RiAddFill/><p>Add to cart</p></div>
+                                    </div>
+                                    </Col>
+                                ))
+                            }
+                             </Row>
+                        </>
+                        ))}
+                     </div>
+                    </>
 
-        <div className='flex-col w-full my-3'>
-            <div className='w-full flex'>
-                <div className='w-full flex flex-col justify-center items-center border shadow-md rounded-lg mx-3 p-3'>
-                    
-                    <div className='flex w-full'>
-                        <img className='object-cover h-20 w-20 rounded-lg' alt='' src='https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=600'/>
-                        <p className='px-2'>Description of the item</p>
-                    </div>
-                    <div className='flex w-full justify-between items-end'>
-                        <div><p>Price info</p></div>
-                        <div className="flex justify-between items-center cursor-pointer"><RiAddFill/><p>Add to cart</p></div>
-                    </div>
-                </div>
-
-                <div className='w-full flex flex-col justify-center items-center border shadow-md rounded-lg mx-3 p-3'>
+                    // <Row className=' w-full my-3 grid'>
+                    //     <div font-semibold text-xl my-3>{newData?.name}</div>
+                    // {newData?.data.map(z => (
+                    //     // <Row className=' w-full my-3 grid'>
+                    //     // <div font-semibold text-xl my-3>{z?.name}</div>
+                    //     // {/* {   
+                    //     //     z.data.map(data => (
+                    //     //             <div>This is a happy day</div>
+                    //     //     ))
+                    //     // } */}
+                    //     // </Row>
+                    // )
+                    // )}
+                    // </Row>
+                )
                 
-                <div className='flex w-full px-2'>
-                        <img className='object-cover h-20 w-20 rounded-lg' alt='' src='https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg?auto=compress&cs=tinysrgb&w=600'/>
-                        <p className='px-2'>Description of the item</p>
-                    </div>
-                    <div className='flex w-full justify-between items-end'>
-                        <div><p>Price info</p></div>
-                        <div className="flex justify-between items-center cursor-pointer" 
-                        onClick={()=>addToCart()}
-                        ><RiAddFill/><p>Add to cart</p></div>
-                    </div>
-                </div>
-            </div>
-
-            <div className='flex-col w-full my-3'>
-            <div className='w-full flex'>
-                <div className='w-full flex flex-col justify-center items-center border shadow-md rounded-lg mx-3 p-3'>
-                    
-                    <div className='flex w-full'>
-                        <img className='object-cover h-20 w-20 rounded-lg' alt='' src='https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=600'/>
-                        <p className='px-2'>Description of the item</p>
-                    </div>
-                    <div className='flex w-full justify-between items-end'>
-                        <div><p>Price info</p></div>
-                        <div className="flex justify-between items-center cursor-pointer"
-                        onClick={()=>addToCart()}><RiAddFill/><p>Add to cart</p></div>
-                    </div>
-                </div>
-
-                <div className='w-full flex flex-col justify-center items-center border shadow-md rounded-lg mx-3 p-3'>
-                
-                <div className='flex w-full px-2 '>
-                        <img className='object-cover h-20 w-20 rounded-lg' alt='' src='https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600'/>
-                        <p className='px-2'>Description of the item</p>
-                    </div>
-                    <div className='flex w-full justify-between items-end'>
-                        <div><p>Price info</p></div>
-                        <div className="flex justify-between items-center cursor-pointer"
-                        onClick={()=>addToCart()}><RiAddFill/><p>Add to cart</p></div>
-                    </div>
-                </div>
-            </div>
-
-            <div className='flex-col w-full my-3'>
-            <div className='w-full flex'>
-                <div className='w-full flex flex-col justify-center items-center border shadow-md rounded-lg mx-3 p-3'>
-                    
-                    <div className='flex w-full'>
-                        <img className='object-cover h-20 w-20 rounded-lg' alt='' src='https://images.pexels.com/photos/33129/popcorn-movie-party-entertainment.jpg?auto=compress&cs=tinysrgb&w=600'/>
-                        <p className='px-2'>Description of the item</p>
-                    </div>
-                    <div className='flex w-full justify-between items-end'>
-                        <div><p>Price info</p></div>
-                        <div className="flex justify-between items-center cursor-pointer"
-                        onClick={()=>addToCart()}><RiAddFill/><p>Add to cart</p></div>
-                    </div>
-                </div>
-
-                <div className='w-full flex flex-col justify-center items-center border shadow-md rounded-lg mx-3 p-3'>
-                
-                <div className='flex w-full px-2'>
-                        <img className='object-cover h-20 w-20 rounded-lg' alt='' src='https://images.pexels.com/photos/375897/pexels-photo-375897.jpeg?auto=compress&cs=tinysrgb&w=600'/>
-                        <p className='px-2'>Description of the item</p>
-                    </div>
-                    <div className='flex w-full justify-between items-end'>
-                        <div><p>Price info</p></div>
-                        <div className="flex justify-between items-center cursor-pointer"
-                        onClick={()=>addToCart()}><RiAddFill/><p>Add to cart</p></div>
-                    </div>
-                </div>
-            </div>
+            })}
             
-            </div>
-            
-        </div>
+            </>);
+
+             
+})
+    }
+    </>
         
-    </div>
         
 
     </div>

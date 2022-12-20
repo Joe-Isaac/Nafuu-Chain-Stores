@@ -1,11 +1,13 @@
 import React from 'react'
+import '../App.css'
 import {BsChevronRight} from 'react-icons/bs'
 import { SocialIcon } from 'react-social-icons'
 
 const Footer = () => {
   return (
     <div className='w-screen h-fit pb-10 flex-row bottom-0
-     bg-[#1d1d1d] self-end border-transparent rounded-xl p-10 shadow-inner'>
+     bg-[#1d1d1d] p-10 shadow-inner'
+     >
 
     
     <div className='w-full flex justify-evenly 

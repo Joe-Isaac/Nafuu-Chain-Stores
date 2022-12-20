@@ -1,7 +1,18 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, {useEffect, useState} from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 const Shops = () => {
     const navigate = useNavigate();
+    const[data, setData] = useState([]);
+    useEffect(() => {
+      fetch("http://localhost:5000/shops")
+      .then(res => res.json())
+      .then(data => {
+        console.log(data , " is the data")
+        setData(data);
+      })
+      .catch(err => console.log(err.message))
+    }, [])
+    
   return (
     <div className='flex-row w-screen'>
             {/* <div className='mx-3 '>Store 1</div>
@@ -10,13 +21,15 @@ const Shops = () => {
             <div className='mx-3'>Store 4</div> */}
             <div className='flex justify-center mb-2'>
             <div className='bg-white p-6 border-transparent rounded-xl shadow-lg hover:shadow-sm hover:bg-gray-50 mx-1.5 w-[30vh]'
-            onClick={()=>navigate("shoppage")}>
+            >
+                <Link to="/shoppage" state={data}>
                 <div className='mb-2'>
                     <img className='relative rounded-xl h-32 w-full mx-auto object-cover' alt='' src='https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=600'/>
                 </div>
                 <header className='font-semibold'>Mufasa's Cloth Line</header>
                 <p className='text-sm'>Exlusive mens, womens and childrens wear</p>
                 <p className='text-sm font-semibold'>Shop 17C</p>
+                </Link>
             </div>
 
             <div className=' bg-white p-6 border-transparent rounded-xl shadow-lg hover:shadow-sm hover:bg-gray-50 mx-1.5 w-[30vh]'

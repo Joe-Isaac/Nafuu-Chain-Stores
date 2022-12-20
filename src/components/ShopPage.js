@@ -8,8 +8,11 @@ import {RiMotorbikeLine} from 'react-icons/ri'
 import {GiThumbUp} from 'react-icons/gi'
 import { useSelector } from 'react-redux'
 import { selectDescription, selectName, selectPrice } from '../slices/navSlice'
+import { useLocation } from 'react-router-dom'
 
 const ShopPage = () => {
+    const location = useLocation();
+    const data = location.state;
     const myName = useSelector(selectName);
     const myPrice = useSelector(selectPrice);
     const myDescription = useSelector(selectDescription);
@@ -17,6 +20,8 @@ const ShopPage = () => {
     useEffect(()=>{
         console.log(myName, "is from the store")
     }, [myName])
+
+    console.log("This data is from the landing page via link", data)
   return (
     <div className='h-screen w-screen overflow-scroll-hidden '>
         <NavigationBar/>
@@ -31,7 +36,7 @@ const ShopPage = () => {
         <div className='flex flex-col h-fit justify-center w-full px-5 ml-5'>
             <div className='border flex-col shadow-xl p-8 w-full mt-3 justify-start bg-white rounded-xl'>
                 <div className='w-full justify-start px-5'>
-                <header className='font-semibold text-4xl'>Store</header>
+                <header className='font-semibold text-4xl my-2'>{data[1]?.name}</header>
                 </div>
                 <div className='w-full flex justify-start'>
                 <div  className='flex justify-evenly items-center px-3'>
@@ -54,8 +59,8 @@ const ShopPage = () => {
                 <Sider/>
 
                 {/* center */}
-                <div className='w-full'>
-                <Center/>
+                <div className='w-full' >
+                <Center data={data[1]}/>
                 </div>
 
             </div>
@@ -69,7 +74,7 @@ const ShopPage = () => {
             {/* right sider */}
             <div className='border shadow-xl h-[40vh] flex-row flex justify-center items-center w-full rounded-xl py-5 my-3 z-20 bg-white'>
 
-                <div className='flex-col h-full flex justify-center min-h-20 items-center bg-cover 
+                <div className='h-full flex-col flex justify-center min-h-20 items-center bg-cover 
                 bg-no-repeat w-full bg-[url("https://res.cloudinary.com/glovoapp/image/fetch//q_auto/https://glovoapp.com/images/svg/astronaut-grey-scale.svg")]'>
                     <div className='justify-self-start'>
                     <header className='font-semibold text-lg'>Your Cart</header>
@@ -79,8 +84,12 @@ const ShopPage = () => {
                     {!myName && <p className='text-sm'>Items that are added to cart will be shown here</p>}
                     {myName && <p>{myName}</p>}
                     {myName && <p>{myDescription}</p>}
-                    {myName && <p>{myPrice}</p>}
+                    
                     </div>
+
+                    {myPrice && <div className='bg-amber-500 rounded-lg w-[30vh] justify-self-center flex justify-center text-white font-semibold mt-5 p-2'>
+                    <p>{myPrice}</p>
+                    </div>}
                 </div>
             </div>
         </div>

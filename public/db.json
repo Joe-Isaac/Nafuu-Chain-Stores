@@ -7,104 +7,410 @@
             "name": "Mufasa's Cloth Line",
             "description" : "Exclusive mens, womens, and childrens wear",
             "shop" : "Shop 17C",
-            "categories" : {
-                "mens":{
-                    "shoes":{
-                        "Nikes": [
-                            {
+            "categories" : [
+               { "name": "men",
+                "data":[
+                    {
+                    "name": "shoes",
+                    "data":[{
+                         "name": "Nikes",
+                         "data":
+                            [{
                                 "name": "Air Force",
                                 "price": 3000,
                                 "available" : [
                                     38, 39, 40, 41
-                                ]
+                                ],
+                                "url":"https://images.pexels.com/photos/12611630/pexels-photo-12611630.jpeg?auto=compress&cs=tinysrgb&w=600"
                             },
                             {
                                 "name": "Huarache",
                                 "price": 2700,
                                 "available" : [
                                     38, 39, 40, 41
-                                ]
+                                ],
+                                "url":"https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=600"
                             },
                             {
                                 "name": "Jordans",
                                 "price": 3300,
                                 "available" : [
                                     38, 39, 40, 41
-                                ]
+                                ],
+                                "url":"https://images.pexels.com/photos/6050916/pexels-photo-6050916.jpeg?auto=compress&cs=tinysrgb&w=600"
                             },
                             {
                                 "name": "Presto",
                                 "price": 3500,
                                 "available" : [
                                     38, 39, 40, 41
-                                ]
+                                ],
+                                "url":"https://i.pinimg.com/564x/f2/6b/7f/f26b7fb346ad9c6d187cc4d097ee4088.jpg"
                             },
                             {
                                 "name": "LeBron XX",
                                 "price": 3500,
                                 "available" : [
                                     38, 39, 40, 41
-                                ]
+                                ],
+                                "url":"https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/d63958cd-8006-4857-919a-39a312107548/lebron-xx-trinity-basketball-shoes-ct1qVm.png"
                             }
-                        ],
-                        "Sply": [
+                        ]},
+                        { "name": "Sply",
+                          "data": 
+                         [
                             {
                                 "name": "Adidas",
                                 "price": 3000,
                                 "available" : [
                                     38, 39, 40, 41
-                                ]
+                                ],
+                                "url":"https://images.pexels.com/photos/6050909/pexels-photo-6050909.jpeg?auto=compress&cs=tinysrgb&w=600"
                             },
                             {
                                 "name": "Yeezy",
                                 "price": 2700,
                                 "available" : [
                                     38, 39, 40, 41
-                                ]
+                                ],
+                                "url":"https://images.pexels.com/photos/10134303/pexels-photo-10134303.jpeg?auto=compress&cs=tinysrgb&w=600"
                             },
                             {
                                 "name": "Zebra",
                                 "price": 3300,
                                 "available" : [
                                     38, 39, 40, 41
-                                ]
+                                ],
+                                "url":"https://images.pexels.com/photos/6965875/pexels-photo-6965875.jpeg?auto=compress&cs=tinysrgb&w=600"
                             },
                             {
                                 "name": "Classic",
                                 "price": 3500,
                                 "available" : [
                                     38, 39, 40, 41
-                                ]
+                                ],
+                                "url":"https://images.pexels.com/photos/11820506/pexels-photo-11820506.jpeg?auto=compress&cs=tinysrgb&w=600"
                             }
-                        ]
-                    },
-                    "trousers":{},
-                    "shirts":{},
-                    "suits":{},
-                    "bags":{}
-                },
-                "womens": {
-                    "shoes":{},
-                    "trousers":{},
-                    "shirts":{},
-                    "suits":{},
-                    "bags":{}
-                },
-                "children": {
-                    "shoes":{},
-                    "trousers":{},
-                    "shirts":{},
-                    "suits":{},
-                    "bags":{}
-                },
-                "unisexual":{
-                    "shoes":{},
-                    "trousers":{},
-                    "shirts":{},
-                    "suits":{},
-                    "bags":{}
-                }
-            }
+                        ]},
+                         {
+                            "name":"Bata",
+                            "data":
+                            [
+                            {
+                                "name": "Oxygen",
+                                "price": 3000,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://batakenya.com/thumbs/8819953-1629879411d157.jpg"
+                            },
+                            {
+                                "name": "Ambassador",
+                                "price": 2700,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://batakenya.com/thumbs/8244491-1627e155cf2657.jpg"
+                            },
+                            {
+                                "name": "Boots",
+                                "price": 3300,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://batakenya.com/thumbs/8046610-161e9c8c28c061.jpg"
+                            },
+                            {
+                                "name": "Classic",
+                                "price": 3500,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://batakenya.com/thumbs/8246040-162f511a06ead6.webp"
+                            }
+                        ]}
+
+    ]},
+                    {
+                        "name": "Trousers",
+                        "data":[
+                        {
+                        "name":"Jeans",
+                        "data": [
+                            {
+                                "name": "Levi's",
+                                "price": 3000,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://lsco.scene7.com/is/image/lsco/005010115-front-pdp?fmt=avif&qlt=40&resMode=bisharp&op_usm=0.6,0.6,8&fit=crop,0&cropN=0,0.35,1,0.65&wid=375&hei=500"
+                            },
+                            {
+                                "name": "Wrangler Cowboy",
+                                "price": 2700,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://images.wrangler.com/is/image/Wrangler/13MWZGH-ALT2?$KDP-LARGE$"
+                            },
+                            {
+                                "name": "Ralph Lauren",
+                                "price": 3300,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://cdn-fsly.yottaa.net/5e18d625d9314057054ee33e/www.ralphlauren.com/v~4b.8a/on/demandware.static/Sites-RalphLauren_US-Site/-/default/dw51c3c485/images/empty.gif?yocs=2M_2Q_2T_"
+                            },
+                            {
+                                "name": "Gap",
+                                "price": 3500,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://www3.assets-gap.com/webcontent/0029/471/198/cn29471198.jpg?q=h&w=234"
+                            }
+                        ]},
+                        {
+                            "name": "Khaki",
+                            "data": [
+                            {
+                                "name": "Beige",
+                                "price": 3000,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://smkollectionz.com/wp-content/uploads/2021/02/Beige-BKL-Slim-Fit-Soft-Khaki-For-Men.jpg"
+                            },
+                            {
+                                "name": "Dark Grey",
+                                "price": 2700,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://smkollectionz.com/wp-content/uploads/2021/08/Dark-Grey-Slim-Fit-Khaki-For-Men.jpg"
+                            },
+                            {
+                                "name": "Mustard",
+                                "price": 3300,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://smkollectionz.com/wp-content/uploads/2021/06/Mustard-Slim-Fit-Soft-Khaki-For-Men.jpg"
+                            },
+                            {
+                                "name": "Tan",
+                                "price": 3500,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://smkollectionz.com/wp-content/uploads/2021/01/Tan-Slim-Fit-Soft-Khaki-For-Men.jpg"
+                            }
+                        ]}
+                    ]}
+                ]},
+                { "name": "Women",
+                "data":[
+                    {
+                    "name": "shoes",
+                    "data":[{
+                         "name": "Nikes",
+                         "data":
+                            [{
+                                "name": "Air Force",
+                                "price": 3000,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://images.pexels.com/photos/12611630/pexels-photo-12611630.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            },
+                            {
+                                "name": "Huarache",
+                                "price": 2700,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            },
+                            {
+                                "name": "Jordans",
+                                "price": 3300,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://images.pexels.com/photos/6050916/pexels-photo-6050916.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            },
+                            {
+                                "name": "Presto",
+                                "price": 3500,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://i.pinimg.com/564x/f2/6b/7f/f26b7fb346ad9c6d187cc4d097ee4088.jpg"
+                            },
+                            {
+                                "name": "LeBron XX",
+                                "price": 3500,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/d63958cd-8006-4857-919a-39a312107548/lebron-xx-trinity-basketball-shoes-ct1qVm.png"
+                            }
+                        ]},
+                        { "name": "Sply",
+                          "data": 
+                         [
+                            {
+                                "name": "Adidas",
+                                "price": 3000,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://images.pexels.com/photos/6050909/pexels-photo-6050909.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            },
+                            {
+                                "name": "Yeezy",
+                                "price": 2700,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://images.pexels.com/photos/10134303/pexels-photo-10134303.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            },
+                            {
+                                "name": "Zebra",
+                                "price": 3300,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://images.pexels.com/photos/6965875/pexels-photo-6965875.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            },
+                            {
+                                "name": "Classic",
+                                "price": 3500,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://images.pexels.com/photos/11820506/pexels-photo-11820506.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            }
+                        ]},
+                         {
+                            "name":"Bata",
+                            "data":
+                            [
+                            {
+                                "name": "Oxygen",
+                                "price": 3000,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://batakenya.com/thumbs/8819953-1629879411d157.jpg"
+                            },
+                            {
+                                "name": "Ambassador",
+                                "price": 2700,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://batakenya.com/thumbs/8244491-1627e155cf2657.jpg"
+                            },
+                            {
+                                "name": "Boots",
+                                "price": 3300,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://batakenya.com/thumbs/8046610-161e9c8c28c061.jpg"
+                            },
+                            {
+                                "name": "Classic",
+                                "price": 3500,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://batakenya.com/thumbs/8246040-162f511a06ead6.webp"
+                            }
+                        ]}
+
+    ]},
+                    {
+                        "name": "Trousers",
+                        "data":[
+                        {
+                        "name":"Jeans",
+                        "data": [
+                            {
+                                "name": "Levi's",
+                                "price": 3000,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://lsco.scene7.com/is/image/lsco/005010115-front-pdp?fmt=avif&qlt=40&resMode=bisharp&op_usm=0.6,0.6,8&fit=crop,0&cropN=0,0.35,1,0.65&wid=375&hei=500"
+                            },
+                            {
+                                "name": "Wrangler Cowboy",
+                                "price": 2700,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://images.wrangler.com/is/image/Wrangler/13MWZGH-ALT2?$KDP-LARGE$"
+                            },
+                            {
+                                "name": "Ralph Lauren",
+                                "price": 3300,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://cdn-fsly.yottaa.net/5e18d625d9314057054ee33e/www.ralphlauren.com/v~4b.8a/on/demandware.static/Sites-RalphLauren_US-Site/-/default/dw51c3c485/images/empty.gif?yocs=2M_2Q_2T_"
+                            },
+                            {
+                                "name": "Gap",
+                                "price": 3500,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://www3.assets-gap.com/webcontent/0029/471/198/cn29471198.jpg?q=h&w=234"
+                            }
+                        ]},
+                        {
+                            "name": "Khaki",
+                            "data": [
+                            {
+                                "name": "Beige",
+                                "price": 3000,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://smkollectionz.com/wp-content/uploads/2021/02/Beige-BKL-Slim-Fit-Soft-Khaki-For-Men.jpg"
+                            },
+                            {
+                                "name": "Dark Grey",
+                                "price": 2700,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://smkollectionz.com/wp-content/uploads/2021/08/Dark-Grey-Slim-Fit-Khaki-For-Men.jpg"
+                            },
+                            {
+                                "name": "Mustard",
+                                "price": 3300,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://smkollectionz.com/wp-content/uploads/2021/06/Mustard-Slim-Fit-Soft-Khaki-For-Men.jpg"
+                            },
+                            {
+                                "name": "Tan",
+                                "price": 3500,
+                                "available" : [
+                                    38, 39, 40, 41
+                                ],
+                                "url":"https://smkollectionz.com/wp-content/uploads/2021/01/Tan-Slim-Fit-Soft-Khaki-For-Men.jpg"
+                            }
+                        ]}
+                    ]}
+                ]}
+                
+            ]
         }
+        
     ]
 }
