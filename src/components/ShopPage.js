@@ -54,12 +54,12 @@ const ShopPage = () => {
             </div>
         
 
-            <div className='h-full flex flex-row w-full px-3'>
+            <div className='h-full flex justify-center flex-row w-full px-3'>
                 {/* sider */}
                 <Sider/>
 
                 {/* center */}
-                <div className='w-full' >
+                <div className='w-full flex justify-center' >
                 <Center data={data[1]}/>
                 </div>
 
@@ -80,7 +80,7 @@ const ShopPage = () => {
                     <header className='font-semibold text-lg'>Your Cart</header>
                     </div>
                     
-                    <div className='my-10'>
+                    <div className='my-10 '>
                     {!myName && <p className='text-sm'>Items that are added to cart will be shown here</p>}
                     {myName && <p>{myName}</p>}
                     {myName && <p>{myDescription}</p>}

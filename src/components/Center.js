@@ -15,7 +15,7 @@ const Center = ({data}) => {
     let times = 0;
 
   return (
-    <div className='overflow-y-hidden px-3 py-3 flex flex-col w-full'>
+    <div className='overflow-y-hidden px-3 py-3 flex justify-center flex-col w-full'>
         
         <>
         {
@@ -29,11 +29,11 @@ const Center = ({data}) => {
             {x?.data.map(newData => {
                 return(
                     <>
-                    <div className='font-semibold text-2xl w-full flex justify-center my-3'>{newData?.name}</div>
+                    <div className='font-semibold text-2xl w-full flex justify-start my-3'>{newData?.name}</div>
                     <div className='w-full my-3'>
                         {newData?.data.map(z => (<>
-                            <div className='font-semibold text-xl my-3'>{z?.name}</div>
-                            <Row className='w-full my-3'>
+                            <div className='font-semibold text-xl my-3 w-full flex justify-center'>{z?.name}</div>
+                            <Row className='w-full my-3 flex justify-center'>
                             {   
                                 z.data.map(data => (
                                     <Col className='w-[40vh] flex flex-col justify-center items-center border shadow-md rounded-lg mx-3 my-3 p-3'>
