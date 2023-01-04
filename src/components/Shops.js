@@ -4,7 +4,7 @@ const Shops = () => {
     const navigate = useNavigate();
     const[data, setData] = useState([]);
     useEffect(() => {
-      fetch("http://192.168.2.152:5000/shops")
+      fetch("http://192.168.2.99:5000/shops")
       .then(res => res.json())
       .then(data => {
         console.log(data , " is the data")

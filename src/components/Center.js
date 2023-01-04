@@ -18,6 +18,9 @@ const Center = ({data}) => {
     <div className='overflow-y-hidden px-3 py-3 flex justify-center flex-col w-full'>
         
         <>
+        <div id="addToCart" className='hidden h-modal'>
+            This is my Modal
+        </div>
         {
         data.categories.map(x => {
             return (<>
@@ -36,7 +39,8 @@ const Center = ({data}) => {
                             <Row className='w-full my-3 flex justify-center'>
                             {   
                                 z.data.map(data => (
-                                    <Col className='w-[40vh] flex flex-col justify-center items-center border shadow-md rounded-lg mx-3 my-3 p-3'>
+                                    <Col className='w-[40vh] flex flex-col justify-center items-center border shadow-md rounded-lg mx-3 my-3 p-3'
+                                    data-modal-togle="addToCart">
                                     <div className='flex w-full'>
                                         <img className='object-cover h-20 w-20 rounded-lg' alt='' src={data.url}/>
                                         <p className='px-2'>{data.name}</p>
@@ -55,20 +59,6 @@ const Center = ({data}) => {
                      </div>
                     </>
 
-                    // <Row className=' w-full my-3 grid'>
-                    //     <div font-semibold text-xl my-3>{newData?.name}</div>
-                    // {newData?.data.map(z => (
-                    //     // <Row className=' w-full my-3 grid'>
-                    //     // <div font-semibold text-xl my-3>{z?.name}</div>
-                    //     // {/* {   
-                    //     //     z.data.map(data => (
-                    //     //             <div>This is a happy day</div>
-                    //     //     ))
-                    //     // } */}
-                    //     // </Row>
-                    // )
-                    // )}
-                    // </Row>
                 )
                 
             })}
